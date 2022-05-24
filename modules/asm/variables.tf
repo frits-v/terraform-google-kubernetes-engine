@@ -98,3 +98,9 @@ variable "skip_download" {
   type        = bool
   default     = true
 }
+
+variable "use_tf_google_credentials_env_var" {
+  description = "Use `GOOGLE_CREDENTIALS` environment variable to run `gcloud auth activate-service-account` with. Optional."
+  type        = bool
+  default     = false
+}
